@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('/ZAD1/gol.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(12, 20px);
+    grid-gap: 2px;
+    background-color: #85de2d; 
+    border: 1px solid #120b0b;
+    padding: 10px;
+}
+
+#container {
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-family: 'Arial', sans-serif; 
+}
+
+.cell {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.X { background-color: #000; color: #000; }
+.Y { background-color: #ff0; color: #ff0; }
+.one { background-color: #f00; color: #f00; }
+.zero { background-color: #fff; color: #ffffff; }
